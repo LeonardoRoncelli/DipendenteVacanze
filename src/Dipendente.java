@@ -21,4 +21,9 @@ public class Dipendente {
     public double getStipendio(){
         return stipendio;
     }
+    public double incrementaSalario(double percentuale){
+        double nuovoStipendio;
+        nuovoStipendio=(getStipendio()*percentuale)+getStipendio();
+        return nuovoStipendio;
+    }
 }
