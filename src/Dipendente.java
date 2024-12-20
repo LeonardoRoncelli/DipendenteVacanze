@@ -23,7 +23,7 @@ public class Dipendente {
     }
     public double incrementaSalario(double percentuale){
         double nuovoStipendio;
-        nuovoStipendio=(getStipendio()*percentuale)+getStipendio();
+        nuovoStipendio=(getStipendio()*(percentuale/100)+getStipendio());
         return nuovoStipendio;
     }
 }
